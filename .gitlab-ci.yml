@@ -1,0 +1,10 @@
+stages:
+  - deploy
+
+deploy:
+  stage: deploy
+  script:
+    - echo "Déploiement en cours..."
+    - # Ajoutez ici les commandes nécessaires pour déployer votre application
+  only:
+    - master # Déployer uniquement à partir de la branche master
