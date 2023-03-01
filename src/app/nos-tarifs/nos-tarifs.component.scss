@@ -1,0 +1,169 @@
+@import "../../variables.scss";
+
+.tarifs-container {
+  position: relative;
+  background: $color-backgroundblue;
+  width: 100%;
+}
+
+.tarifs-titles {
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 45px;
+  font-size: 24px;
+}
+
+.title-c-b {
+  color: $color-backgroundblack;
+}
+
+.title-c-g {
+  color: $color-textgray2;
+}
+
+.formule-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  gap: 15px;
+  margin-bottom: 70px;
+  position: relative;
+  z-index: 99;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    padding: 0px 10px 0px 10px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1445px) {
+    gap: 10px;
+  }
+
+  &_block {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 20%;
+    border-radius: 5px;
+    background-color: $color-titlewhite;
+    box-shadow: 0px 5px 8px 0px $color-textgray2;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1445px) {
+      width: 32%;
+    }
+  }
+
+  &_card {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: $color-titlewhite;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 60px;
+    justify-content: center;
+  }
+
+  &_btn {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    &--button {
+      cursor: pointer;
+      font-family: "sk-modernist-3", sans-serif;
+      border: 2px solid $color-blue;
+      color: $color-blue;
+      width: 230px;
+      height: 49px;
+      border-radius: 10px;
+      font-weight: 700;
+      background: $color-titlewhite;
+
+      &:hover {
+        filter: invert(0.3);
+      }
+    }
+  }
+}
+
+.title-card {
+  font-size: 36px;
+  margin-top: 49px;
+  margin-bottom: 35px;
+
+  @media screen and (min-width: 768px) and (max-width: 1445px) {
+    font-size: 28px;
+  }
+}
+
+.price-card {
+  font-size: 58px;
+  font-weight: 100;
+
+  @media screen and (min-width: 768px) and (max-width: 1445px) {
+    font-size: 48px;
+  }
+
+  &_period {
+    font-size: 20px;
+  }
+}
+
+.user-card {
+  font-size: 20px;
+}
+
+.familly-card {
+  margin-top: 58px;
+  margin-bottom: 38px;
+  display: flex;
+
+  &_icon {
+    object-fit: contain;
+  }
+
+  &_text {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+}
+
+.title-c-y {
+  color: $color-gold;
+}
+
+.best-value {
+  color: $color-backgroundblack;
+  position: absolute;
+  font-weight: 700;
+  top: 7%;
+  left: 67%;
+  rotate: 45deg;
+  white-space: nowrap;
+
+  @media screen and (max-width: 768px) {
+    top: 11%;
+    left: 72%;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1445px) {
+    font-size: 13px;
+  }
+}
+
+.background-white {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  background-color: $color-titlewhite;
+  bottom: 0;
+}

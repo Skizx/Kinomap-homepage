@@ -1,0 +1,16 @@
+<section class="collapse-container">
+    <h3 class="title-collapse">Vos questions les plus fréquentes</h3>
+    <p class="text-c-g2 text-collapse">Get ready, start your indoor training and explore the world from home on Kinomap!</p>
+    <!-- Importation des données récupérer via call API dans le tableau faq avec la boucle ngFor en ajoutant comme keys index -->
+    <div class="dropdown-container" *ngFor="let items of faq; let i = index">
+        <!-- Importation title -->
+        <div class="dropdown-container_title">{{items.title}} 
+            <!-- Importation fonction toggle réagissant au clique comme gestion d'evenement prenant en compte l'index -->
+            <button class="dropdown-container_title--btn" (click)="toggleFaq(i)">
+            <img src="../../assets/+.png" alt="+">
+        </button>
+    </div>
+    <!-- Importation details -->
+        <div class="dropdown-container_display" *ngIf="items.open" [ngClass]="{'open' : items.open}">{{items.details}}</div>
+    </div>
+</section>

@@ -1,0 +1,59 @@
+@import "../../variables.scss";
+
+.fonctionnalites-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 200px;
+
+  @media screen and (max-width: 1445px) {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+
+  &_title {
+    font-size: 48px;
+    width: 380px;
+    padding-top: 64px;
+    margin-left: 335px;
+
+    @media screen and (max-width: 1445px) {
+      margin-left: 0;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+  }
+
+  &_list {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    margin: 0px 50px 0px 150px;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+
+    @media screen and (max-width: 1445px) {
+      margin: 0;
+    }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      flex-wrap: nowrap;
+    }
+
+    &--block {
+      width: 340px;
+      height: fit-content;
+      margin: 32px;
+
+      @media screen and (min-width: 768px) and (max-width: 1445px) {
+        width: auto;
+      }
+    }
+  }
+}
+
+.icon-certif {
+  margin-right: 12px;
+  object-fit: contain;
+  width: 20px;
+}

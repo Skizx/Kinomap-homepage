@@ -1,0 +1,95 @@
+@import "../../variables.scss";
+
+.collapse-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-backgroundblue;
+  padding-top: 375px;
+  padding-bottom: 200px;
+
+  @media screen and (max-width: 768px) {
+    padding-bottom: 100px;
+  }
+}
+
+.dropdown-container {
+  background-color: $color-titlewhite;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px 0px #d4d9e880;
+
+  &_title {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    font-size: 20px;
+
+    @media screen and (max-width: 768px) {
+      padding: 20px;
+    }
+
+    &--btn {
+      background: none;
+      margin-right: 35px;
+      border: none;
+
+      @media screen and (max-width: 1445px) {
+        margin-right: 0;
+        margin-left: 35px;
+      }
+    }
+    img {
+      cursor: pointer;
+    }
+  }
+
+  &_display {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+
+    &.open {
+      max-height: 1000px;
+      transition: max-height 0.3s ease-in;
+      color: $color-textgray3;
+      text-align: center;
+      padding: 20px;
+    }
+  }
+}
+
+.text-collapse {
+  font-size: 24px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+
+  @media screen and (max-width: 1445px) {
+    text-align: center;
+  }
+}
+
+.title-collapse {
+  font-size: 48px;
+  width: 30%;
+  text-align: center;
+  font-weight: 900;
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+    width: 100%;
+    padding-top: 50px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1445px) {
+    width: 100%;
+  }
+}
+
+.text-c-g2 {
+  color: $color-textgray2;
+}

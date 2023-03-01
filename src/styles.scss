@@ -1,1 +1,37 @@
-/* You can add global styles to this file, and also import other style files */
+/* Importation des fichiers scss de chaque components permettant d'éviter les répetitions */
+@import "./variables.scss";
+@import "./app/nos-offres/nos-offres.component.scss";
+@import "./app/nos-tarifs/nos-tarifs.component.scss";
+@import "./app/nos-fonctionnalites/nos-fonctionnalites.component.scss";
+@import "./app/exploration/exploration.component.scss";
+@import "./app/profitez/profitez.component.scss";
+@import "./app/collapse/collapse.component.scss";
+@import "./app/carte-cadeau/carte-cadeau.component.scss";
+@import "./app/app.component.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "sk-modernist-3", sans-serif;
+}
+
+footer {
+  background-color: $color-backgroundblue;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}

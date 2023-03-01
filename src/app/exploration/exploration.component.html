@@ -1,0 +1,32 @@
+<section>
+    <div class="exploration-container">
+      <img class="exploration-container_block" src="../../assets/Exploration.png" alt="Image parcours exploration">
+      <div class="exploration-container_block--info">
+        <h3 class="title-w title-c-w">Explore lorem ipsum <span class="title-c-gold">it dolor</span></h3>
+        <br>
+        <p class="text-c-g text-align">Get ready, start your indoor training and explore the world from home on Kinomap!</p>
+        <br>
+        <div class="rating-container">
+          <img src="../../assets/preferedApp.png" alt="Application recommandées">
+          <!-- Importation de la note score récupérer via call API -->
+          <div class="score">{{ score }}</div>
+           <!-- Importation des Etoiles retourner en fonction de la note score dans le tableau stars avec la boucle ngFor -->
+          <div class="stars" *ngFor="let star of stars">
+            <img [src]="star.src" [alt]="star.alt" />
+          </div>
+          
+        </div>
+      </div>
+      <!--               PROFITEZ  (Component éxtérieur disponible si besoin)                   -->
+      <section class="profitez-container">
+        <h3 class="profitez-container_title" *ngIf="free">Profitez de {{ free }} jours gratuit</h3>
+        <div class="profitez-container_block">
+            <img class="profitez-container_block--img" src="../../assets/Cadena.png" alt="Image cadena deverouillez"><p class="profitez-container_block--text"> Aujourd’hui <span class="text-c-g3"> démarrez votre 1er entraînement gratuitement</span></p>
+        </div>
+        <div class="profitez-container_block">
+            <img class="profitez-container_block--img" src="../../assets/Calendrier.png" alt="Image calendrier 14 jours"><p class="profitez-container_block--text"> Jour 14 <span class="text-c-g3"> abonnez-vous avec la formule de votre choix</span></p>
+        </div>
+    </section>
+    </div>
+  </section>
+  

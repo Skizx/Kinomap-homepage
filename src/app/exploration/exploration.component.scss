@@ -1,0 +1,81 @@
+@import "../../variables.scss";
+
+.exploration-container {
+  position: relative;
+  background-color: black;
+  width: 100%;
+
+  @media screen and (max-width: 768px) {
+    height: 620px;
+  }
+
+  &_block {
+    position: relative;
+    width: 100%;
+    opacity: 0.5;
+
+    @media screen and (max-width: 768px) {
+      height: 620px;
+      object-fit: cover;
+    }
+
+    &--info {
+      position: absolute;
+      right: 0;
+      top: 33%;
+      width: 29%;
+
+      @media screen and (max-width: 768px) {
+        top: 10%;
+        width: 50%;
+      }
+
+      @media screen and (min-width: 768px) and (max-width: 1445px) {
+        top: 6%;
+        width: 53%;
+      }
+    }
+  }
+}
+
+.title-c-gold {
+  color: $color-gold;
+}
+
+.text-align {
+  width: 66%;
+
+  @media screen and (max-width: 768px) {
+    width: 90%;
+  }
+}
+
+.rating-container {
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: $color-titlewhite;
+  width: 90%;
+
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap;
+    height: 130px;
+    justify-content: center;
+  }
+}
+
+.score {
+  margin: auto;
+  font-size: 12px;
+}
+
+.stars {
+  display: flex;
+  margin-left: 10px;
+
+  @media screen and (max-width: 768px) {
+    margin-left: 0;
+    height: 12px;
+  }
+}

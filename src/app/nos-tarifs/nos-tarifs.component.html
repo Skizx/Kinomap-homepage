@@ -1,0 +1,39 @@
+<section class="tarifs-container">
+    <div class="tarifs-titles">
+        <h2 class="title-c-b">Des tarifs lorem ipsum</h2>
+        <br>
+        <p class="title-c-g">Get ready, start your indoor training and explore the world from home on Kinomap!</p>
+    </div>
+<div class="background-white"></div>
+<article class="formule-container">
+    <!-- Importation des données récupérer via call API dans le tableau result avec la boucle ngFor -->
+    <div class="formule-container_block" *ngFor="let item of result" [ngStyle]="{'color': item.name === 'Annuel' ? '#ffc947' : '#428ff3'}">
+        <!-- Modification de classe & Style des elements en fonction du nom de l'item retourner par l'API (Annuel) avec ngStyle & ngClasse avec condition ternaire-->
+        <div class="formule-container_card" [ngStyle]="{'background-image' : item.name === 'Annuel' ? 'url(../../../../assets/Best-value.png)' : '',
+        'background-repeat' : 'no-repeat',
+        'background-size' : 'contain',
+        'height' : item.name === 'Annuel' ? '600px' : '',
+        'border': item.name === 'Annuel' ? '4px solid #ffc947' : 'none'}">
+        <p class="best-value" *ngIf="item.name === 'Annuel'">BEST VALUES</p>
+        <!-- Importation name -->
+        <h3 class="title-card liaison-title_classe" [ngClass]="{'liaison-title_classe': item.name === 'Annuel'}" [ngStyle]="{'color': '#000000'}">{{item.name}}</h3>
+            <p class="title-c-g">à partir de</p>
+            <!-- Importation price & modification du point en virgule avec toString & replace -->
+            <h4 class="price-card">{{item.price.toString().replace('.',',') }}€<span class="price-card_period title-c-g">/{{ transformInNumber(item.period) }}</span></h4>
+            <!-- Importation users -->
+            <p class="title-c-g user-card">pour<span class="title-c-b"> {{item.users}} utilisateur </span></p>
+           <div class="familly-card">
+            <img class="familly-card_icon" src="../../assets/Picto-abonnement-famille-simplifié 5.png" alt="Pictogramme abonnement familliale">
+            <p class="familly-card_text title-c-g">Disponible avec l'option famille <span class="title-c-b">jusqu'à 5 utilisateurs</span></p>
+           </div>
+            <div class="formule-container_btn">
+                <button class="formule-container_btn--button liaison-button_classe" [ngClass]="{'liaison-button_classe': item.name === 'Annuel'}" 
+                [ngStyle]="{'border': item.name === 'Annuel' ? 'none' : '2px solid #428ff3',
+                 'width' : '230px', 'height' : '49px', 'border-radius': '10px',
+                'color' : item.name === 'Annuel' ? '#000000' : '#428ff3',
+                'background': item.name === 'Annuel' ? '#ffc947' : '#FFFFFF'}">Abonnez-vous</button>
+            </div>
+        </div>
+    </div>
+</article>
+</section>
