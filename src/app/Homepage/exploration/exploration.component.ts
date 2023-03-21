@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { GetScoreApiService } from '../get-score-api.service';
-import { GetFreePeriodApiService } from '../get-free-period-api.service';
+import { GetScoreApiService } from '../../get-score-api.service';
+import { GetFreePeriodApiService } from '../../get-free-period-api.service';
 
 @Component({
   selector: 'app-exploration',

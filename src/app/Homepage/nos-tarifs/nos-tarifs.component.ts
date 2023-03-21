@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { GetApiService } from '../get-api.service';
-import { TarifItem } from '../get-api.service';
+import { GetApiService } from '../../get-api.service';
+import { TarifItem } from '../../get-api.service';
 
 @Component({
   selector: 'app-nos-tarifs',
@@ -28,11 +28,7 @@ export class NosTarifsComponent {
       console.log(this.valeurPeriod)  
     });
   }
-  
-  modifyPrice(price: number) {
-    
-  }
-  
+
   transformInNumber(period: number) {
     if (period === 1) {
     return "MOIS"

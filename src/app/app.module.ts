@@ -2,13 +2,17 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule} from '@angular/common/http'
 import { AppComponent } from './app.component';
-import { NosOffresComponent } from './nos-offres/nos-offres.component';
-import { NosTarifsComponent } from './nos-tarifs/nos-tarifs.component';
-import { NosFonctionnalitesComponent } from './nos-fonctionnalites/nos-fonctionnalites.component';
-import { ExplorationComponent } from './exploration/exploration.component';
-import { ProfitezComponent } from './profitez/profitez.component';
-import { CollapseComponent } from './collapse/collapse.component';
-import { CarteCadeauComponent } from './carte-cadeau/carte-cadeau.component';
+import { NosOffresComponent } from './Homepage/nos-offres/nos-offres.component';
+import { NosTarifsComponent } from './Homepage/nos-tarifs/nos-tarifs.component';
+import { NosFonctionnalitesComponent } from './Homepage/nos-fonctionnalites/nos-fonctionnalites.component';
+import { ExplorationComponent } from './Homepage/exploration/exploration.component';
+import { ProfitezComponent } from './Homepage/profitez/profitez.component';
+import { CollapseComponent } from './Homepage/collapse/collapse.component';
+import { CarteCadeauComponent } from './Homepage/carte-cadeau/carte-cadeau.component';
+import { HomePageComponent } from './Homepage/home-page/home-page.component';
+import { AppRoutingModule } from './app.routing.module';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,10 +24,14 @@ import { CarteCadeauComponent } from './carte-cadeau/carte-cadeau.component';
     ProfitezComponent,
     CollapseComponent,
     CarteCadeauComponent,
+    HomePageComponent,
+    NavbarComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

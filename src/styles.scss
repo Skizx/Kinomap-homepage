@@ -1,12 +1,12 @@
 /* Importation des fichiers scss de chaque components permettant d'éviter les répetitions */
 @import "./variables.scss";
-@import "./app/nos-offres/nos-offres.component.scss";
-@import "./app/nos-tarifs/nos-tarifs.component.scss";
-@import "./app/nos-fonctionnalites/nos-fonctionnalites.component.scss";
-@import "./app/exploration/exploration.component.scss";
-@import "./app/profitez/profitez.component.scss";
-@import "./app/collapse/collapse.component.scss";
-@import "./app/carte-cadeau/carte-cadeau.component.scss";
+@import "./app/Homepage/nos-offres/nos-offres.component.scss";
+@import "./app/Homepage/nos-tarifs/nos-tarifs.component.scss";
+@import "./app/Homepage/nos-fonctionnalites/nos-fonctionnalites.component.scss";
+@import "./app/Homepage/exploration/exploration.component.scss";
+@import "./app/Homepage/profitez/profitez.component.scss";
+@import "./app/Homepage/collapse/collapse.component.scss";
+@import "./app/Homepage/carte-cadeau/carte-cadeau.component.scss";
 @import "./app/app.component.scss";
 
 * {

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { GetFaqApiService } from '../get-faq-api.service'; 
-import { FaqItem } from '../get-faq-api.service';
+import { GetFaqApiService } from '../../get-faq-api.service'; 
+import { FaqItem } from '../../get-faq-api.service';
 
 
 @Component({
