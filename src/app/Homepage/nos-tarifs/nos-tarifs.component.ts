@@ -23,9 +23,9 @@ export class NosTarifsComponent {
     // permettant de spécifiez le type de données attendue
     this.apiData.getDatas().subscribe((data: TarifItem[]) => {
       this.result = data;
-      this.valeurPeriod = this.transformInNumber(this.result[0].period);
+      //this.valeurPeriod = this.transformInNumber(this.result[0].period);
       //console.log(this.result)
-      console.log(this.valeurPeriod)  
+      //console.log(this.valeurPeriod)  
     });
   }
 

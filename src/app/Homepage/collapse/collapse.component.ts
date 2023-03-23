@@ -25,7 +25,7 @@ export class CollapseComponent {
     // permettant de spécifiez le type de données attendue
     this.apiFaq.getFaq().subscribe((data: FaqItem[]) => {
       this.faq = data;
-      console.log(data);
+      //console.log(data);
     })
   }
 

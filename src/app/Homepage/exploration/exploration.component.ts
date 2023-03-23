@@ -21,13 +21,14 @@ export class ExplorationComponent {
     this.scoreData.getScore().subscribe((data) => {
       this.score = data
       this.stars = this.transformInStars(this.score)
-      console.log(this.score);
-      console.log(this.transformInStars(this.score));
+      //console.log(this.score);
+      //console.log(this.transformInStars(this.score));
 
       // Appel de la fonction getFreePeriod 
-      this.getFreePeriod()
-      
-      
+    }),
+    
+    this.freeData.getFreePeriod().subscribe((res) => {
+      this.free = res
     })
   }
 
@@ -53,9 +54,9 @@ export class ExplorationComponent {
     return stars;
   }
 // Fonction permettant de faire un Call API pour la route free-period
-getFreePeriod() {
+/*getFreePeriod() {
   this.freeData.getFreePeriod().subscribe((res) => {
     this.free = res
   })
-}
+}*/
 }

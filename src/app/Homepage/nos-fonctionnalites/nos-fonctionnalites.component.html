@@ -1,10 +1,6 @@
 <section class="fonctionnalites-container">
     <h4 class="fonctionnalites-container_title">Fonctionnalités incluses dans les formules </h4>
     <ul class="fonctionnalites-container_list">
-        <li class="fonctionnalites-container_list--block title-c-g"><img class="icon-certif" src="../../assets/validation.png" alt="Certification dorée">Partagez vos activités sur des <b>plateformes tierces de Fitness</b></li>
-        <li class="fonctionnalites-container_list--block title-c-g"><img class="icon-certif" src="../../assets/validation.png" alt="Certification dorée">Profitez de l'expérience complète en débloquant l'accès à toutes les vidéos de Kinomap</li>
-        <li class="fonctionnalites-container_list--block title-c-g"><img class="icon-certif" src="../../assets/validation.png" alt="Certification dorée">Prenez part à nos challenges et soyez récompensés !</li>
-        <li class="fonctionnalites-container_list--block title-c-g"><img class="icon-certif" src="../../assets/validation.png" alt="Certification dorée">Pratiquez de l'entrainement par intervalle</li>
-        <li class="fonctionnalites-container_list--block title-c-g"><img class="icon-certif" src="../../assets/validation.png" alt="Certification dorée">Rejoignez des <b>sessions multijoueurs</b> avec des participants du monde entier</li>
+        <li class="fonctionnalites-container_list--block title-c-g" *ngFor="let item of fonctionalitees"><img class="icon-certif" src="../../assets/validation.png" alt="Certification dorée">{{item}}</li>
     </ul>
 </section>

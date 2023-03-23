@@ -1,5 +1,6 @@
-/* Importation des fichiers scss de chaque components permettant d'éviter les répetitions */
+@import url(//db.onlinewebfonts.com/c/d8a28611cf5f5d635071f2d90d9e9cc8?family=Sk-Modernist);
 @import "./variables.scss";
+/* Importation des fichiers scss de chaque components permettant d'éviter les répetitions */
 @import "./app/Homepage/nos-offres/nos-offres.component.scss";
 @import "./app/Homepage/nos-tarifs/nos-tarifs.component.scss";
 @import "./app/Homepage/nos-fonctionnalites/nos-fonctionnalites.component.scss";
@@ -7,7 +8,7 @@
 @import "./app/Homepage/profitez/profitez.component.scss";
 @import "./app/Homepage/collapse/collapse.component.scss";
 @import "./app/Homepage/carte-cadeau/carte-cadeau.component.scss";
-@import "./app/app.component.scss";
+@import "./app/app.component.scss"; 
 
 * {
   padding: 0;
@@ -21,7 +22,7 @@ html {
 }
 
 body {
-  font-family: "sk-modernist-3", sans-serif;
+  font-family: "Sk-Modernist", sans-serif;
 }
 
 footer {
